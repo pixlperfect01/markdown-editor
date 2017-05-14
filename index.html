@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Markdown Editor with Vue.js</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="editor">
+  <textarea :value="input" @input="update"></textarea>
+  <div v-html="compiledMarkdown"></div>
+</div>
+<script src="https://unpkg.com/vue">
+<script src="script.js">
+</body>
+</html>
